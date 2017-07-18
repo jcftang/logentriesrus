@@ -1,4 +1,4 @@
-# Logentries Hook for [Logrus](https://github.com/Sirupsen/logrus)
+# Logentries Hook for [Logrus](https://github.com/sirupsen/logrus)
 
 Package logentriesrus provides a logentries hook for the [logrus] logging package.
 
@@ -10,7 +10,7 @@ package main
 import (
     "os"
 
-    "github.com/Sirupsen/logrus"
+    "github.com/sirupsen/logrus"
     "github.com/jcftang/logentriesrus"
 )
 

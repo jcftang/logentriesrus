@@ -1,6 +1,6 @@
-# Logentries Hook for [Logrus](https://github.com/sirupsen/logrus)
+# r7insight Hook for [Logrus](https://github.com/sirupsen/logrus)
 
-Package logentriesrus provides a logentries hook for the [logrus] logging package.
+Package logentriesrus provides a r7insight hook for the [logrus] logging package.
 
 ## Example usage
 
@@ -22,7 +22,7 @@ func main() {
 
     logrus.SetLevel(logrus.DebugLevel)
 
-    le, err := logentriesrus.NewLogentriesrusHook("5605593B-9E4F-4A3E-9865-12752055E14B")
+    le, err := logentriesrus.NewLogentriesrusHook("eu.data.logs.insight.rapid7.com", "5605593B-9E4F-4A3E-9865-12752055E14B")
     if err != nil {
         os.Exit(-1)        
     }

@@ -2,7 +2,7 @@ package logentriesrus
 
 import (
 	"fmt"
-	"github.com/bsphere/le_go"
+	"github.com/spalkltd/le_go"
 	"github.com/sirupsen/logrus"
 	"os"
 )
@@ -17,8 +17,8 @@ type LogentriesrusHook struct {
 	Client         *le_go.Logger
 }
 
-func NewLogentriesrusHook(t string) (*LogentriesrusHook, error) {
-	client, err := le_go.Connect(t)
+func NewLogentriesrusHook(host string, token string) (*LogentriesrusHook, error) {
+	client, err := le_go.Connect(host, token)
 	le := LogentriesrusHook{
 		Client: client,
 	}

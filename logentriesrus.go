@@ -2,7 +2,7 @@ package logentriesrus
 
 import (
 	"fmt"
-	"github.com/spalkltd/le_go"
+	"github.com/SpalkLtd/le_go"
 	"github.com/sirupsen/logrus"
 	"os"
 )
